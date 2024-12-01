@@ -9,8 +9,8 @@ const Header = () => {
     { label: "Accueil", href: "#home" },
     { label: "À propos", href: "#about" },
     { label: "Services", href: "#services" },
-    { label: "Projets", href: "#projects" },
     { label: "Technologies", href: "#technologies" },
+    { label: "Projets", href: "#projects" },
     { label: "Contact", href: "#contact" },
   ];
 
