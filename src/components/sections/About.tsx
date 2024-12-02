@@ -16,32 +16,32 @@ const teamMembers = [
 
 const About = () => {
   // Slider settings
-   const sliderSettings = {
-     dots: true,
-     infinite: true,
-     speed: 500,
-     slidesToShow: 3,
-     slidesToScroll: 1,
-     autoplay: true, // Enable autoplay
-     autoplaySpeed: 2000, // Time between slide changes (in milliseconds)
-     pauseOnHover: true, // Pause autoplay when hovering over the slider
-     centerMode: true, // Adds a focused central slide for a more modern look
-     focusOnSelect: true,
-     responsive: [
-       {
-         breakpoint: 1024,
-         settings: {
-           slidesToShow: 2,
-         },
-       },
-       {
-         breakpoint: 768,
-         settings: {
-           slidesToShow: 1,
-         },
-       },
-     ],
-   };
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 2000, // Time between slide changes (in milliseconds)
+    pauseOnHover: true, // Pause autoplay when hovering over the slider
+    centerMode: true, // Adds a focused central slide for a more modern look
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <section
@@ -113,7 +113,7 @@ const About = () => {
           <Slider {...sliderSettings}>
             {teamMembers.map((member, index) => (
               <div key={index} className="p-4 flex justify-center">
-                <div className="p-6 bg-white rounded-lg shadow-lg text-center w-72 ">
+                <div className="p-6 bg-white rounded-lg shadow-lg text-center w-full sm:w-72">
                   <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl text-blue-600 font-bold">
                       {member.name.charAt(0)}
