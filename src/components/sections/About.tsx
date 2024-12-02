@@ -20,7 +20,7 @@ const About = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 3, // Default for larger screens
     slidesToScroll: 1,
     autoplay: true, // Enable autoplay
     autoplaySpeed: 2000, // Time between slide changes (in milliseconds)
@@ -31,13 +31,13 @@ const About = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2, // Show 2 slides on medium screens
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1, // Show 1 slide on small screens (mobile)
         },
       },
     ],
@@ -113,7 +113,7 @@ const About = () => {
           <Slider {...sliderSettings}>
             {teamMembers.map((member, index) => (
               <div key={index} className="p-4 flex justify-center">
-                <div className="p-6 bg-white rounded-lg shadow-lg text-center w-full sm:w-72">
+                <div className="p-6 bg-white rounded-lg shadow-lg text-center w-full sm:w-72 mx-auto">
                   <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl text-blue-600 font-bold">
                       {member.name.charAt(0)}
