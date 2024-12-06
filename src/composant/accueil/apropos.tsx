@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const teamMembers = [
-    { name: "Sarah Martin", role: "CEO & Lead Developer" },
+    { img: "./src/assets/photosmembres/ludovic.jpg", name: "Ludovic Otabela", role: "Developpeur Full-stack" },
     { name: "Thomas Dubois", role: "CTO & Architecture" },
     { name: "Marie Chen", role: "Full-Stack Developer" },
     { name: "Lucas Silva", role: "Mobile Developer" },
@@ -114,10 +114,8 @@ const About = () => {
                         {teamMembers.map((member, index) => (
                             <div key={index} className="p-4 flex justify-center">
                                 <div className="p-6 bg-white rounded-lg shadow-lg text-center w-72 ">
-                                    <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                        <span className="text-3xl text-blue-600 font-bold">
-                                            {member.name.charAt(0)}
-                                        </span>
+                                    <div style={{ backgroundImage: `url(${member.img})`, backgroundSize: 'cover', backgroundPosition: 'center'}} className="bg-[url('${member.img}')] w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        
                                     </div>
                                     <h4 className="text-lg font-semibold text-gray-800">
                                         {member.name}
@@ -127,38 +125,7 @@ const About = () => {
                             </div>
                         ))}
                     </Slider>
-                    {/* <div className="flex items-center justify-center">
-
-                        <div className="relative w-[600px] h-[600px] bg-gray-200 rounded-full">
-                       
-                            <div className="absolute top-0 left-1/2  transform -translate-x-1/2 flex bg-white w-[160px] h-[160px] shadow-lg rounded-full items-center justify-center">
-                                <img src="./src/assets/img/17278088580512.jpg" alt="" className="rounded-full h-[150px] w-[150px]" />
-                            </div>
-                            
-                            <div className="absolute top-[30%]  left-[83%] transform -translate-x-1/2 -translate-y-1/2 flex bg-white w-[160px] h-[160px] shadow-lg rounded-full items-center justify-center">
-                                <img src="./src/assets/img/17278088580512.jpg" alt="" className="rounded-full h-[150px] w-[150px]" />
-                            </div>
-                        
-                            <div className="absolute top-[70%] left-[83%] transform -translate-x-1/2 -translate-y-1/2 flex bg-white w-[160px] h-[160px] shadow-lg rounded-full items-center justify-center">
-                                <img src="./src/assets/img/17278088580512.jpg" alt="" className="rounded-full h-[150px] w-[150px]" />
-                            </div>
-                
-                            <div className="absolute bottom-0  left-1/2 transform -translate-x-1/2 flex bg-white w-[160px] h-[160px] shadow-lg rounded-full items-center justify-center">
-                                <img src="./src/assets/img/17278088580512.jpg" alt="" className="rounded-full h-[150px] w-[150px]" />
-                            </div>
-                       
-                            <div className="absolute top-[70%]  left-[17%] transform -translate-x-1/2 -translate-y-1/2 flex bg-white w-[160px] h-[160px] shadow-lg rounded-full items-center justify-center">
-                                <img src="./src/assets/img/17278088580512.jpg" alt="" className="rounded-full h-[150px] w-[150px]" />
-                            </div>
-                           
-                            <div className="absolute top-[30%] top-[150px] left-[17%] transform -translate-x-1/2 -translate-y-1/2 flex bg-white w-[160px] h-[160px] shadow-lg rounded-full items-center justify-center">
-                                <img src="./src/assets/img/17278088580512.jpg" alt="" className="rounded-full h-[150px] w-[150px]" />
-                            </div>
-                            <div className="absolute top-[50%]  left-[50%] transform -translate-x-1/2 -translate-y-1/2 flex bg-white w-[60px] h-[60px] shadow-lg rounded-full items-center justify-center">
-
-                            </div>
-                        </div>
-                    </div> */}
+                    
 
                 </div>
             </div>

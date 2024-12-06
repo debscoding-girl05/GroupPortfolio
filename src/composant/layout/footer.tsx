@@ -20,8 +20,7 @@ function Reseaux({onAfficherservs, onAfficheraccs, onAfficheprojs, onAffichecont
                         </div>
 
                         <p className='sm:text-white hover:text-white transition-colors text-center sm:text-left textfoot '>
-                            jnwedjhw wjhf wfiw fjhwf whfwjihw fiwffw mefijw mffdwif mwfw mfiwf mwfji3 dhcjwjcwe wjkdd wj
-                        </p>
+                        Nous offrons des solutions innovantes en informatique et technologie pour accompagner la transformation numérique des entreprises.                        </p>
                     </div>
                     <div className='p-4 flex flex-col justify-center items-center sm:items-start sm:pl-20'>
                         <h4 className='mb-5 text-lg font-bold mb-4 mt-4'>Service</h4>
