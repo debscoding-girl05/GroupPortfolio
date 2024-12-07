@@ -112,8 +112,8 @@ const About = () => {
           {/* Slider */}
           <Slider {...sliderSettings}>
             {teamMembers.map((member, index) => (
-              <div key={index} className="p-4 flex justify-center">
-                <div className="p-6 bg-white rounded-lg shadow-lg text-center w-72 ">
+              <div key={index} className="p-4 flex justify-center ">
+                <div className="p-6 bg-white rounded-lg shadow-lg text-center w-65 ">
                   <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-3xl text-blue-600 font-bold">
                       {member.name.charAt(0)}

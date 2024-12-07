@@ -1,0 +1,233 @@
+.containeraccueil {
+    width: 100vw;
+   
+
+    .containblock {
+        display: grid;
+        // grid-template-columns: 0.75fr 1fr;
+        width: 100vw;
+        height: 700px;
+        background: linear-gradient(90deg, #F9FAFB, rgba(255, 255, 255, 0) 80%);
+
+        .blockaccueil1 {
+            /* border: solid 2px #000; */
+            display: flex;
+
+            align-items: center;
+
+
+            .divtitre {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                padding: 0 0 0 40px;
+
+                .titre {
+                    font-family: "Prosto One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 50px;
+                }
+
+                .describetitre {
+                    font-family: "Arsenal SC", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+
+                .btntitre {
+                    // background: linear-gradient(to right, var(--bleu), var(--argent));
+                    outline: none;
+                    width: fit-content;
+                    height: fit-content;
+                    padding: 9px;
+                    border-radius: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--blanc);
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.321);
+                    border: none;
+                }
+            }
+        }
+
+        .blockaccueil2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* position: relative; */
+            .imgillustration {
+                width: 80%;
+                height: 400px;
+                z-index: -1;
+            }
+        }
+
+    }
+}
+
+.keyfoot {
+    font-family: "Prosto One", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.titreprojet {
+    font-family: "Prosto One", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.titrecontact,
+.titrecontact {
+    font-family: "Prosto One", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.textfoot {
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+// @media (prefers-color-scheme: light) {
+//     .containeraccueil {
+
+//         .containblock {
+//             display: grid;
+//             grid-template-rows: 0.75fr 1fr;
+//             width: 100vw;
+//         }
+//     }
+// }
+
+@media (max-width: 576px) {
+    .containeraccueil {
+        height: 100vh;
+
+        .containblock {
+            display: grid;
+            grid-template-rows: 0.75fr 1fr;
+            height: 100vh;
+
+            .blockaccueil1 {
+                /* border: solid 2px #000; */
+                margin-top: 50px;
+
+                .divtitre {
+                    padding: 15px;
+                    margin-top: 40px;
+
+                    .titre {
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            .blockaccueil2 {
+                margin-top: 20px;
+
+                /* position: relative; */
+                .imgillustration {
+                    width: 90%;
+                    height: 300px;
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .containeraccueil {
+        height: 100vh;
+
+        .containblock {
+            display: grid;
+            grid-template-rows: 0.75fr 1fr;
+            height: 100vh;
+
+            .blockaccueil1 {
+                /* border: solid 2px #000; */
+                margin-top: 50px;
+
+                .divtitre {
+                    padding: 15px;
+                    margin-top: 40px;
+
+                    .titre {
+                        font-size: 50px;
+                    }
+
+                    .describetitre {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .containeraccueil {
+        height: 100vh;
+        .containblock {
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 0.75fr 1fr;
+            .blockaccueil1 {
+                /* border: solid 2px #000; */
+                margin-top: 50px;
+
+                .divtitre {
+                    padding: 15px;
+                    margin-top: 40px;
+
+                    .titre {
+                        font-size: 50px;
+                    }
+
+                    .describetitre {
+                        font-size: 22px;
+                    }
+                }
+            }
+            .blockaccueil2 {
+                
+
+                /* position: relative; */
+                .imgillustration {
+                    width: 90%;
+                    height: 600px;
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .containeraccueil {
+
+        .containblock {
+            display: grid;
+            grid-template-columns: 0.75fr 1fr;
+        }
+    }
+}
+
+@media (min-width: 1201px) {
+    .containeraccueil {
+        height: 100vh;
+        .containblock {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 0.75fr 1fr;
+        }
+    }
+}

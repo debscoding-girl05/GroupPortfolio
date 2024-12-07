@@ -39,7 +39,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 py-2 bg-transparent">
       <nav className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative flex items-center justify-between h-16 bg-gray-900/80 backdrop-blur-md rounded-full shadow-xl">
+        <div className="relative flex items-center justify-between h-16 bg-gray-500 backdrop-blur-md rounded-full shadow-xl">
           {/* Logo and Brand Name */}
           <motion.div
             className="flex items-center space-x-3 pl-6"
@@ -50,7 +50,7 @@ const Header = () => {
             <img
               src="src\images\logo.png" 
               alt="Logo"
-              className="h-10 w-10 object-contain rounded-full bg-gradient-to-br from-blue-500 to-white"
+              className="h-10 w-10 object-contain rounded-full bg-gradient-to-r from-white to-gray-500"
             />
             <span className="text-xl font-bold text-white tracking-wider">
               Key-Solution Tech
@@ -68,7 +68,7 @@ const Header = () => {
                 variants={itemVariants}
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-gray-500 group-hover:w-full transition-all duration-300"></span>
               </motion.a>
             ))}
 
@@ -77,10 +77,8 @@ const Header = () => {
               href="https://github.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-4 px-2 py-2 mr-2 text-sm font-medium rounded-full text-white flex items-center space-x-2"
-              style={{
-                background: "linear-gradient(90deg, #6a11cb 0%, #2575fc 100%)",
-              }}
+              className="ml-4 px-2 py-2 mr-2 text-sm font-medium rounded-full text-white flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-gray-500"
+              
               whileHover={{
                 scale: 1.05,
                 transition: { duration: 0.3 },
@@ -107,7 +105,7 @@ const Header = () => {
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
-              className="md:hidden absolute top-full left-0 w-full mt-2 bg-gray-900/95 backdrop-blur-md shadow-xl rounded-2xl overflow-hidden"
+              className="md:hidden absolute left-[2.5%] top-full left-0 w-[95%] mt-2 bg-gray-500 backdrop-blur-md shadow-xl rounded-2xl overflow-hidden"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
